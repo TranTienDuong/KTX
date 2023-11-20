@@ -39,3 +39,5 @@ C:\Users\DUONG\Downloads\BTL_QuanLiKTX-master\BTL_QuanLiKTX\obj\Debug\BTL_QuanLi
 C:\Users\DUONG\Downloads\BTL_QuanLiKTX-master\BTL_QuanLiKTX\obj\Debug\BTL_QuanLiKTX.FormThemSinhVien.resources
 C:\Users\DUONG\Downloads\BTL_QuanLiKTX-master\BTL_QuanLiKTX\obj\Debug\BTL_QuanLiKTX.FormTimKiem.resources
 C:\Users\DUONG\Downloads\BTL_QuanLiKTX-master\BTL_QuanLiKTX\obj\Debug\BTL_QuanLiKTX.FormEditSV.resources
+C:\Users\DUONG\Downloads\BTL_QuanLiKTX-master\BTL_QuanLiKTX\obj\Debug\BTL_QuanLiKTX.FormSVDatPhong.resources
+C:\Users\DUONG\Downloads\BTL_QuanLiKTX-master\BTL_QuanLiKTX\obj\Debug\BTL_QuanLiKTX.FormSVTraPhong.resources

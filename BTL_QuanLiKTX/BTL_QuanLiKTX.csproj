@@ -113,6 +113,18 @@
     <Compile Include="FormQuanLiHoaDon.Designer.cs">
       <DependentUpon>FormQuanLiHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSVDatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSVDatPhong.Designer.cs">
+      <DependentUpon>FormSVDatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSVTraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSVTraPhong.Designer.cs">
+      <DependentUpon>FormSVTraPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormThem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +180,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormQuanLiHoaDon.resx">
       <DependentUpon>FormQuanLiHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSVDatPhong.resx">
+      <DependentUpon>FormSVDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSVTraPhong.resx">
+      <DependentUpon>FormSVTraPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThem.resx">
       <DependentUpon>FormThem.cs</DependentUpon>

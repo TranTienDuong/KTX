@@ -25,10 +25,40 @@ namespace BTL_QuanLiKTX
 			this.sinhVienTableAdapter.Fill(this.qLKyTucXa.SinhVien);
 		}
 
+		private void tìmKiếmSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			FormTimKiem them = new FormTimKiem();
+			them.ShowDialog();
+			this.Close();
+		}
 		private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			this.Hide();
 			FormThemSinhVien them = new FormThemSinhVien();
+			them.ShowDialog();
+			this.Close();
+		}
+
+		private void sửaToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			FormEditSV them = new FormEditSV();
+			them.ShowDialog();
+			this.Close();
+		}
+		private void sinhViênĐặtPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			FormSVDatPhong them = new FormSVDatPhong();
+			them.ShowDialog();
+			this.Close();
+		}
+
+		private void sinhViênTrảPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			FormSVTraPhong them = new FormSVTraPhong();
 			them.ShowDialog();
 			this.Close();
 		}
@@ -95,25 +125,7 @@ namespace BTL_QuanLiKTX
 				exBook.SaveAs(filename);
 				exApp.Quit();
 			}
-			
 		}
-
-		private void tìmKiếmSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			this.Hide();
-			FormTimKiem them = new FormTimKiem();
-			them.ShowDialog();
-			this.Close();
-		}
-
-		private void sửaToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			this.Hide();
-			FormEditSV them = new FormEditSV();
-			them.ShowDialog();
-			this.Close();
-		}
-
 		private void btnAll_Click(object sender, EventArgs e)
 		{
 			dgvDSSinhVien.DataSource = pd.DocBang("Select * from SinhVien");
@@ -126,5 +138,6 @@ namespace BTL_QuanLiKTX
 						   Where Thuephong.Ngaykt > Getdate()";
 			dgvDSSinhVien.DataSource = pd.DocBang(sql);
 		}
+
 	}
 }

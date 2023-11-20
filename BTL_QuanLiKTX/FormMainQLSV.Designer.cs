@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.chứcNăngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.tìmKiếmSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,6 +51,8 @@
 			this.dgvDSSinhVien = new Guna.UI2.WinForms.Guna2DataGridView();
 			this.btnAll = new System.Windows.Forms.Button();
 			this.btnLivingKTX = new System.Windows.Forms.Button();
+			this.sinhViênĐặtPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.sinhViênTrảPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinhVienBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.qLKyTucXa)).BeginInit();
@@ -73,6 +75,8 @@
             this.tìmKiếmSinhViênToolStripMenuItem,
             this.thêmToolStripMenuItem,
             this.sửaToolStripMenuItem,
+            this.sinhViênĐặtPhòngToolStripMenuItem,
+            this.sinhViênTrảPhòngToolStripMenuItem,
             this.xuấtExcelToolStripMenuItem});
 			this.chứcNăngToolStripMenuItem.Name = "chứcNăngToolStripMenuItem";
 			this.chứcNăngToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
@@ -82,7 +86,7 @@
 			// 
 			this.tìmKiếmSinhViênToolStripMenuItem.Name = "tìmKiếmSinhViênToolStripMenuItem";
 			this.tìmKiếmSinhViênToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-			this.tìmKiếmSinhViênToolStripMenuItem.Text = "Tìm kiếm sinh viên";
+			this.tìmKiếmSinhViênToolStripMenuItem.Text = "Tìm Kiếm Sinh Viên";
 			this.tìmKiếmSinhViênToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmSinhViênToolStripMenuItem_Click);
 			// 
 			// thêmToolStripMenuItem
@@ -164,17 +168,17 @@
 			// 
 			// dgvDSSinhVien
 			// 
-			dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-			this.dgvDSSinhVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+			this.dgvDSSinhVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
 			this.dgvDSSinhVien.AutoGenerateColumns = false;
-			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvDSSinhVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvDSSinhVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
 			this.dgvDSSinhVien.ColumnHeadersHeight = 15;
 			this.dgvDSSinhVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.dgvDSSinhVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -186,14 +190,14 @@
             this.makhoaDataGridViewTextBoxColumn,
             this.malopDataGridViewTextBoxColumn});
 			this.dgvDSSinhVien.DataSource = this.sinhVienBindingSource;
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dgvDSSinhVien.DefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dgvDSSinhVien.DefaultCellStyle = dataGridViewCellStyle12;
 			this.dgvDSSinhVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.dgvDSSinhVien.Location = new System.Drawing.Point(12, 27);
 			this.dgvDSSinhVien.Name = "dgvDSSinhVien";
@@ -250,6 +254,20 @@
 			this.btnLivingKTX.UseVisualStyleBackColor = false;
 			this.btnLivingKTX.Click += new System.EventHandler(this.btnLivingKTX_Click);
 			// 
+			// sinhViênĐặtPhòngToolStripMenuItem
+			// 
+			this.sinhViênĐặtPhòngToolStripMenuItem.Name = "sinhViênĐặtPhòngToolStripMenuItem";
+			this.sinhViênĐặtPhòngToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+			this.sinhViênĐặtPhòngToolStripMenuItem.Text = "Sinh Viên Đặt Phòng";
+			this.sinhViênĐặtPhòngToolStripMenuItem.Click += new System.EventHandler(this.sinhViênĐặtPhòngToolStripMenuItem_Click);
+			// 
+			// sinhViênTrảPhòngToolStripMenuItem
+			// 
+			this.sinhViênTrảPhòngToolStripMenuItem.Name = "sinhViênTrảPhòngToolStripMenuItem";
+			this.sinhViênTrảPhòngToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+			this.sinhViênTrảPhòngToolStripMenuItem.Text = "Sinh Viên Trả Phòng";
+			this.sinhViênTrảPhòngToolStripMenuItem.Click += new System.EventHandler(this.sinhViênTrảPhòngToolStripMenuItem_Click);
+			// 
 			// FormMainQLSV
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,5 +312,7 @@
 		private Guna.UI2.WinForms.Guna2DataGridView dgvDSSinhVien;
 		private System.Windows.Forms.Button btnAll;
 		private System.Windows.Forms.Button btnLivingKTX;
+		private System.Windows.Forms.ToolStripMenuItem sinhViênĐặtPhòngToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem sinhViênTrảPhòngToolStripMenuItem;
 	}
 }
